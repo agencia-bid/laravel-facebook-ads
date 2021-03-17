@@ -24,11 +24,39 @@ Get ads infos (campaigns, ads, insights, etc...) from Facebook & Instagram Ads A
 
 Follow this steps to use this package on your Laravel installation
 
-### Installing with composer
+**First usage**
 
-```bash
-composer require edbizarro/laravel-facebook-ads
+Add these lines to your comoposer.json
 ```
+"require": {
+    "agencia-bid/laravel-facebook-ads": "v0.15"
+}
+```
+
+and 
+
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/agencia-bid/laravel-facebook-ads#v0.15"
+    }
+]
+```
+
+so, run `composer install`
+
+
+**Already in use (must to update)**
+
+- by composer command 
+
+run `composer require agencia-bid/laravel-facebook-ads "v0.15" -W`
+
+Or, just follow the **First usage** steps
+
+
+
 
 The package will automatically register it's service provider.
 
